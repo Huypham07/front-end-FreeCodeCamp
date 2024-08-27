@@ -1,0 +1,60 @@
+body {
+    min-width: 400px;
+    max-width: 600px;
+    width: 70%;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#personal-info {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#personal-info input {
+    padding: 10px;
+    width: 80%;
+}
+
+#personal-info select {
+    padding: 10px;
+    width: 60%;
+}
+
+.left-column {
+    text-align: left;
+    border-right: 2px solid #ccc;
+}
+
+.right-column {
+    text-align: right;
+}
+
+label {
+    display: block;
+    margin: 20px 0px;
+}
+
+fieldset {
+    margin: 20px 0;
+}
+
+#submit {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    resize: vertical;
+    margin: 0 auto;
+    display: block;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description"><em>Let us know how we can improve freeCodeCamp</em></p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <table id="personal-info" cellspacing="0">
+              <tr>
+                <td class="left-column"><label id="name-label" for="name">Name</label></td>
+                <td class="right-column">
+                  <input id="name" name="name" type="text" placeholder="Enter your name" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="left-column"><label id="email-label" for="email">Email</label></td>
+                <td class="right-column">
+                  <input id="email" name="email" type="email" placeholder="Enter your email" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="left-column"><label id="number-label" for="number">Age</label></td>
+                <td class="right-column">
+                  <input id="number" name="age" type="number" placeholder="Enter your age" min="1" max="150" required />
+                </td>
+              </tr>
+              <tr>
+                <td class="left-column"><label id="dropdown-label" for="dropdown">Sex</label></td>
+                <td class="right-column">
+                  <select id="dropdown" name="role" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female/option>
+                    <option value="unknown">Unknown</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset>
+            <legend>Which option best describes your current role?</legend>
+            <label><input id="student" value="student" type="radio" name="role" checked /> Student</label>
+            <label><input id="job" value="job" type="radio" name="role" /> Full Time Job</label>
+            <label><input id="learner" value="learner" type="radio" name="role" /> Full Time Learner</label>
+            <label><input id="prefer_no" value="prefer_no" type="radio" name="role" /> Prefer not to say</label>
+            <label><input id="other" value="other" type="radio" name="role" /> Other</label>
+          </fieldset>
+          <fieldset>
+            <legend>what would you like to see important?</legend>
+            <label><input id="front_end" value="front_end" type="checkbox" name="prefer" /> Front-end Projects</label>
+            <label><input id="back_end" value="back_end" type="checkbox" name="prefer" /> Back-end Projects</label>
+            <label><input id="data_visual" value="data_visual" type="checkbox" name="prefer" /> Data Visualization</label>
+            <label><input id="challenges" value="challenges" type="checkbox" name="prefer" /> Challenges</label>
+            <label><input id="open_source" value="open_source" type="checkbox" name="prefer" /> Open Source Community</label>
+            <label><input id="gamedev" value="gamedev" type="checkbox" name="prefer" /> Gane Development</label>
+          </fieldset>
+          <fieldset>
+            <legend>Comments or suggestions?</legend>
+            <textarea id="comments" name="comment" placeholder="Enter your comment here"" rows="8"></textarea>
+          </fieldset>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
